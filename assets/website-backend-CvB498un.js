@@ -1,0 +1,2 @@
+async function e(e){throw Error(`The enquiry service is temporarily unavailable. Please contact EWPS on WhatsApp.`)}function t(e){let t=e=>`"`+(/^[\s\uFEFF]*[=+\-@]/.test(e)?`'`+e:e).replaceAll(`"`,`""`)+`"`;return[`Received,Name,Email,Phone,Goal,Status,Notes`,...e.map(e=>[e.created_at,e.name,e.email,e.phone,e.goal,e.status,e.notes].map(t).join(`,`))].join(`\r
+`)}export{t as enquiriesCsv,e as sendEnquiry};
